@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My resonsive page</title>
+    <meta name="author" content="XO PIXEL">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
+   
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+    <!-- this is the header which contains all the nav elements with navigation header -->
+<header>
+    <div id="navcontainer">
+        <nav>
+            <ul>
+                <li><a href="#">File</a></li>
+                <li><a href="#">Edit </a></li>
+                <li><a href="#">View</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </div>
+    <nav class="mobile">
+        <button onclick="openNav()" class="clicker_class">  </button>
+    </nav>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">File</a>
+            <a href="#About">Edit </a>
+            <a href="#Resume">View</a>
+            <a href="#Project">Help</a>
+            
+        </div>
+    </div>
+</header>
+
+<!-- this is the section that contain all of the rest elements -->
+<section id="About">
+    <div id="main">
+       
+        <div id="list">
+                <ul class="inner_list">
+                    <li class="list_item"> items1</li>
+                    <li class="list_item">items2</li>
+                    <li class="list_item">items3 </li>
+                    <li class="list_item">items4 </li>
+                    <li class="list_item"> items5</li>
+                </ul>
+            
+
+        </div>
+        <div id="description">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum
+            </p>
+            <div id ="second">
+                
+                    <img src="pic1.jpg" alt="panorama">
+                
+            </div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum
+            </p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum
+            </p>
+
+        </div>
+    </div>
+</section>
+<footer>
+    <section>
+        <p>Copyright © 2017 by Mikias Gebre | All right reserved.</p>
+    </section>
+</footer>
+
+</body>
+</html>
+
+
+<!-- this is the javascript function that make the hamburger icon appear and disappear on touch -->
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
